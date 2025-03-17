@@ -1,0 +1,430 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+    background-color: #f8f8f8;
+}
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 70px;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
+h3 {
+    color: #333;
+}
+p {
+    font-size: 1rem;
+    color: #666;
+}
+section {
+    padding: 20px;
+    margin: 30px 0;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: rgb(45, 44, 44);
+    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, padding 0.3s;
+}
+#navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: lightgray;
+}
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#navbar li {
+    margin: 0 20px;
+}
+#navbar a {
+    text-decoration: none;
+    color: lightslategray;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+#navbar a:hover {
+    color: lightseagreen;
+}
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px 10px;
+}
+.scrolled .logo {
+    color: #f39c12;
+}
+.menu-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    display: inline-block;
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.menu-card:hover {
+    transform: scale(1.05);
+}
+.btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #e67e22;
+}
+#cart {
+    background-color: black;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#cart-items {
+    margin-bottom: 20px;
+    color: white;
+}
+.sign-in-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 10pc;
+    max-width: 400px; 
+    text-align: center;
+}
+.sign-in-form h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.sign-in-form label {
+    display: block;
+    font-size: 14px;
+    margin: 8px 0 5px;
+    color: #555;
+}
+.sign-in-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+.sign-in-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.sign-in-form button:hover {
+    background-color: #e67e22;
+}
+.sign-in-form p {
+    font-size: 14px;
+    color: #555;
+}
+.sign-in-form p a {
+    color: #f39c12;
+    text-decoration: none;
+}
+.sign-in-form p a:hover {
+    text-decoration: underline;
+}
+.sign-up-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+}
+.sign-up-form h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.sign-up-form label {
+    display: block;
+    font-size: 14px;
+    margin: 8px 0 5px;
+    color: #555;
+}
+.sign-up-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+.sign-up-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.sign-up-form button:hover {
+    background-color: #e67e22;
+}
+.sign-up-form p {
+    font-size: 14px;
+    color: #555;
+}
+.sign-up-form p a {
+    color: #f39c12;
+    text-decoration: none;
+}
+.sign-up-form p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    #navbar {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    #navbar .logo {
+      font-size: 1.5rem;
+    }
+  
+    #navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #navbar li {
+      margin: 10px 0;
+    }
+  
+    .menu-card {
+      width: 100%;
+      margin: 15px 0;
+    }
+  
+    .sign-in-form {
+      padding: 20px;
+      width: 90%;
+      max-width: 350px;
+      margin: 40px auto;
+    }
+  }
+  
+
+  .contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 1pc;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .contact-form h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .contact-form label {
+    display: block;
+    font-size: 14px;
+    margin: 8px 0 5px;
+    color: #555;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .contact-form button:hover {
+    background-color: #e67e22;
+  }
+
+  .contact-form p {
+    font-size: 14px;
+    color: #555;
+  }
+
+
+  .review-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 1pc;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .review-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .review-container label {
+    display: block;
+    font-size: 14px;
+    margin: 8px 0 5px;
+    color: #555;
+  }
+
+  .review-container select,
+  .review-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+  }
+
+  .review-container textarea {
+    height: 150px;
+    resize: vertical;
+  }
+
+  .review-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .review-container button:hover {
+    background-color: #e67e22;
+  }
+
+  .review-container p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .rating input {
+    display: none;
+  }
+
+  .rating label {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+  }
+
+  .rating input:checked ~ label,
+  .rating input:hover ~ label {
+    color: #f39c12;
+  }
+  @media (max-width: 480px) {
+    #navbar .logo {
+      font-size: 1.2rem;
+    }
+  
+    #navbar ul {
+      padding: 0;
+    }
+  
+    .menu-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .sign-in-form {
+      width: 100%;
+      max-width: 300px;
+    }
+}
+  

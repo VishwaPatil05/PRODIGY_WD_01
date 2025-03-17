@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant  Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+  <nav id="navbar">
+    <div class="logo">Restaurant</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="sign-in.html" class="active">Sign In</a></li>
+        <li><a href="sign-up.html" class="active">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="content">
+    <section id="starters">
+      <h1>STARTERS</h1>
+      <div class="menu-card" onclick="addToCart('Starter: Garlic Bread')">
+        <img src="https://therecipecritic.com/wp-content/uploads/2020/02/cheesy_garlic_bread.jpg" alt="Garlic Bread">
+        <h3>Garlic Bread</h3>
+        <p>Rs 150</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Starter: Spring Rolls')">
+        <img src="https://saltedmint.com/wp-content/uploads/2024/01/Vegetable-Spring-Rolls-4-500x500.jpg" alt="Spring Rolls">
+        <h3>Spring Rolls</h3>
+        <p>Rs 270</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Starter: Crispy Corn')">
+        <img src="https://static.toiimg.com/thumb/93714345.cms?imgsize=72836&width=800&height=800" alt="Crispy Corn">
+        <h3>Crispy Corn</h3>
+        <p>Rs 180</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Starter: Crispy Veg')">
+        <img src="https://ranveerbrar.com/wp-content/uploads/2022/06/Veg-crispy.jpg" alt="Crispy Veg">
+        <h3>Crispy Veg</h3>
+        <p>Rs 250</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Starter: Manchow Soup')">
+        <img src="https://easyindiancookbook.com/wp-content/uploads/2023/07/manchow-soup-veg-6.jpg" alt="Manchow Soup">
+        <h3>Manchow Soup</h3>
+        <p>Rs 160</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Starter: Veg Manchurian')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDE1T1Jn_4Tjeh6kRSNBcz1SSGA1sZhtpTRQ&s" alt="Veg Manchurian">
+        <h3>Veg Manchurian</h3>
+        <p>Rs 210</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </section>
+
+    <section id="main-course">
+      <h1>MAIN COURSE</h1>
+      <div class="menu-card" onclick="addToCart('Main Course: Paneer Butter Masala')">
+        <img src="https://www.ruchiskitchen.com/wp-content/uploads/2020/12/Paneer-butter-masala-recipe-3-500x500.jpg" alt="Paneer Butter Masala">
+        <h3>Paneer Butter Masala</h3>
+        <p>Rs 250</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Main Course: Butter Naan')">
+        <img src="https://cdn.dotpe.in/longtail/store-items/8165282/GAqa3ata.jpeg" alt="Butter Naan">
+        <h3>Butter Naan</h3>
+        <p>Rs 45</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Main Course: Veg Thali')">
+        <img src="https://img.etimg.com/thumb/width-1200,height-1200,imgsize-778906,resizemode-75,msid-115021187/news/economy/indicators/home-cooked-veg-thali-cost-jumps-20-on-year-says-crisil-report.jpg" alt="Veg Thali">
+        <h3>Veg Thali</h3>
+        <p>RS 240</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Main Course: Veg Masala Pulav')">
+        <img src="https://madhurasrecipe.com/wp-content/uploads/2022/01/tawa_pulao_featured.jpg" alt="Veg Masala Pulav">
+        <h3>Veg Masala Pulav</h3>
+        <p>Rs 150</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Main Course: Dal Makhani')">
+        <img src="https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-Blog.jpg" alt="Dal Makhani">
+        <h3>Dal Makhani</h3>
+        <p>Rs 160</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Main Course: Raita ')">
+        <img src="https://cdn.foodfaithfitness.com/uploads/2024/09/Raita-Recipe-A_fff_Raita-Recipe6859_Feature-2.jpg" alt="Raita">
+        <h3>Raita</h3>
+        <p>Rs 120</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </section>
+
+    <section id="dessert">
+      <h1>DESSERT</h1>
+      <div class="menu-card" onclick="addToCart('Dessert: Chocolate Layered Sweet Treat')">
+        <img src="https://nutricia.com.au/fortisip/wp-content/uploads/sites/8/2020/09/Forticreme-Chocolate-Chocolate-Layered-Dessert-1-scaled.jpeg" alt="Chocolate Layered Sweet Treat">
+        <h3>Chocolate Layered Sweet Treat</h3>
+        <p>Rs 190</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Dessert:Fluffy Cream Cheese Dessert')">
+        <img src="https://www.sixsistersstuff.com/wp-content/uploads/2014/04/Fluffy-Cream-Cheese-Dessert-1.jpg" alt="Fluffy Cream Cheese Dessert">
+        <h3>Fluffy Cream Cheese Dessert</h3>
+        <p>Rs 240</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Dessert: Strawberry Panna Cotta')">
+        <img src="https://chopnotch.com/wp-content/uploads/2020/11/Panna-Cotta-1.jpg" alt="Strawberry Panna Cotta">
+        <h3>Strawberry Panna Cotta</h3>
+        <p>Rs 230</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Dessert: Chocolate Mousse')">
+        <img src="https://www.onceuponachef.com/images/2019/04/Chocolate-Mousse-1200x1500.jpg" alt="Chocolate Mousse">
+        <h3>Chocolate Mousse</h3>
+        <p>Rs 210</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Dessert: Chocolate Lasagna')">
+        <img src="https://www.centercutcook.com/wp-content/uploads/2025/01/chocolate-lasagna-4.jpg" alt="Chocolate Lasagna">
+        <h3>Chocolate Lasagna</h3>
+        <p>Rs 260</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" onclick="addToCart('Dessert: Mini Blueberry Cheesecakes')">
+        <img src="https://pastryandbeyond.com/wp-content/uploads/2022/03/Mini-Blueberry-Cheesecakes-featured-.jpg" alt="Mini Blueberry Cheesecakes">
+        <h3>Mini Blueberry Cheesecakes</h3>
+        <p>Rs 150</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </section>
+
+    
+    <section id="cart">
+      <h2>YOUR CART</h2>
+      <div id="cart-items">
+        <p>No items in the cart</p>
+      </div>
+      <button id="checkout-btn" onclick="checkout()">Checkout</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
